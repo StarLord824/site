@@ -1,8 +1,9 @@
-import React from 'react'
 import SearchBar from './SearchBar'
 import { ModeToggle } from './ModeToggle'
+import Image from 'next/image'
 
 const Header = () => {
+  
   const tabs= [
     {
       title: 'Projects',
@@ -16,7 +17,10 @@ const Header = () => {
     }]
   return (
     <header className="flex items-center justify-around w-full h-1/9 border-b-2 border-white/20 text-xl font-semibold">
-        <div className='text-3xl font-bold'>StarLord.dev</div>
+        <div className='text-3xl font-bold'>
+          <Image src="" alt="profilePic" width={40} height={40}/>
+          StarLord.dev
+        </div>
         <div className='flex gap-3 text-xl font-semibold text-neutral-500'>
             {tabs.map( (tab, index)=>{
               return (
