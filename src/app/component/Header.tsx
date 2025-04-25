@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchBar from './SearchBar'
+import { ModeToggle } from './ModeToggle'
 
 const Header = () => {
   const tabs= [
@@ -27,7 +28,9 @@ const Header = () => {
         </div>
         <div className="flex gap-10">
           <SearchBar/>
-          <div>Dark/Light</div>
+          <div>
+            <ModeToggle/>
+          </div>
           <div> 
             Options
           </div>
