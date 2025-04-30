@@ -1,8 +1,19 @@
+"use client"
+
+import { motion } from 'motion/react'
 import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 export default function SiderBar() {
     return (
-    <div className=" absolute z-100 right-0 top-50 my-auto w-16 h-2/5 flex flex-col items-center justify-around border-t-2 border-white/20 font-semibold bg-white/20 text-white text-3xl rounded-l-4xl">
+    <motion.div className=" absolute z-100 right-2 top-50 my-auto w-16 h-2/5 flex flex-col items-center justify-around font-semibold text-neutral-600 text-3xl rounded-l-4xl rounded-r-xl dark:text-white dark:2 border-white/20 dark: bg-white/20 "
+        initial={{ y: 0 }}
+        animate={{ y: [0, -10, 0] }} // Float up and down
+        transition={{
+            duration: 5,
+            repeat: Infinity,
+            ease: 'easeInOut'
+        }}
+    >
         <div>
             <button className='hover:scale-120 duration-150'>
             <a href="https://linkedin.com/in/abhinav-shukla-877097267" target="_blank" rel="noopener noreferrer">
@@ -31,6 +42,6 @@ export default function SiderBar() {
             </a>
             </button>
         </div>
-    </div>
+    </motion.div>
     )
 }
