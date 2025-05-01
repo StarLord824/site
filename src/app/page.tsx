@@ -1,16 +1,16 @@
 // import { Main } from "next/document";
-import Header from "./component/Header";
-import MainSection from "./component/MainSection";
-import Footer from "./component/Footer";
-import SideBar from "./component/SiderBar";
+import Header from "../components/Header/Header";
+import MainSection from "../components/Main/MainSection";
+import Footer from "../components/Footer/Footer";
+import SideBar from "../components/SideBar/SiderBar";
 
 export default function Home() {
   return (
     <div className="w-full h-screen">
-      <SideBar/>
-      <Header/>
-      <MainSection/>
-      <Footer/>
+      <SideBar />
+      <Header />
+      <MainSection />
+      <Footer />
     </div>
   );
 }
