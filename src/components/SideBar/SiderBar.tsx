@@ -5,7 +5,7 @@ import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-i
 
 export default function SiderBar() {
     return (
-    <motion.div className=" absolute z-100 right-2 top-50 my-auto w-16 h-1/2 flex flex-col items-center justify-around font-semibold text-neutral-600 text-3xl rounded-l-4xl rounded-r-xl dark:text-white dark:2 border-white/20 dark: bg-white/20 "
+    <motion.div className="group absolute z-100 right-2 top-50 my-auto w-16 h-1/2 flex flex-col items-center justify-around font-semibold text-neutral-600 text-3xl rounded-l-4xl rounded-r-xl dark:text-white dark:2 border-white/20 dark: bg-white/20 "
         initial={{ y: 0 }}
         animate={{ y: [0, -10, 0] }} // Float up and down
         transition={{

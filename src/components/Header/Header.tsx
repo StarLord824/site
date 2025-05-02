@@ -2,7 +2,7 @@ import SearchBar from "./SearchBar";
 import { ModeToggle } from "./ModeToggle";
 import Image from "next/image";
 import { Link } from "lucide-react";
-import Options from "./Options";
+// import Options from "./Options";
 
 const Header = () => {
   const tabs = [
@@ -60,9 +60,9 @@ const Header = () => {
         <div>
           <ModeToggle />
         </div>
-        <div>
+        {/* <div>
           <Options/>
-        </div>
+        </div> */}
       </div>
     </header>
   );
